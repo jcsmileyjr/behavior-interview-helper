@@ -1,0 +1,55 @@
+.landingPage--container {
+    background-color: black;
+    border: 1px solid blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: pink;
+    border: 1px solid red;
+    flex: 1;
+}
+
+main {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.landingPage__content--container {
+    background-color: olive;
+    border: 1px solid red;
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.landingPage__contentImage--container {
+    background-color: green;
+    border: 1px solid red;
+    flex: 2;
+}
+
+.landingPage__contentText--container {
+    background-color: yellow;
+    border: 1px solid red;
+    flex: 1;
+}
+
+.landingPage__contentCTA--container {
+    background-color: purple;
+    border: 1px solid red;
+    flex: 1;
+}
+
+@media only screen and (min-width:500px){
+    .landingPage__content--container {
+        flex-direction: row;
+    }
+
+    .landingPage__contentImage--container, .landingPage__contentText--container {
+        flex: 1;
+    }
+  }
