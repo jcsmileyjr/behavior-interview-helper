@@ -1,14 +1,14 @@
 .landingPage--container {
-    background-color: black;
-    border: 1px solid blue;
+    background-color: black; /*testing*/
+    border: 1px solid blue; /*testing*/
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: pink;
-    border: 1px solid red;
+    background-color: pink; /*testing*/
+    border: 1px solid red; /*testing*/
     flex: 1;
 }
 
@@ -19,30 +19,43 @@ main {
 }
 
 .landingPage__content--container {
-    background-color: olive;
-    border: 1px solid red;
+    background-color: olive; /*testing*/
+    border: 1px solid red; /*testing*/
     flex: 6;
     display: flex;
     flex-direction: column;
 }
 
-.landingPage__contentImage--container {
-    background-color: green;
-    border: 1px solid red;
+.landingPage__contentImage--container { 
+    background-color: green; /*testing*/
+    border: 1px solid red; /*testing*/
     flex: 2;
 }
 
 .landingPage__contentText--container {
-    background-color: yellow;
-    border: 1px solid red;
+    background-color: yellow; /*testing*/
+    border: 1px solid red; /*testing*/
     flex: 1;
 }
 
 .landingPage__contentCTA--container {
-    background-color: purple;
-    border: 1px solid red;
+    background-color: purple; /*testing*/
+    border: 1px solid red; /*testing*/
     flex: 1;
 }
+
+.landingPage__contentText--container > p {
+    color: orange; /*testing*/
+}
+
+.landingPage__contentText--container > p >span {
+    color:black; /*testing*/
+}
+
+.showDesktopView {
+    display:none;
+}
+
 
 @media only screen and (min-width:500px){
     .landingPage__content--container {
@@ -52,4 +65,8 @@ main {
     .landingPage__contentImage--container, .landingPage__contentText--container {
         flex: 1;
     }
-  }
+    .showDesktopView {
+        display:block;
+    }
+}
+

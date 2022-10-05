@@ -1,4 +1,7 @@
 import "./landingPage.css";
+import smallSpeaker from "../../images/speaking-1-80p.png";
+import largeSpeaker from "../../images/speaking-2.png";
+
 /**
  * Setup Landing Page architeture - done
  * Setup initial responsive designs - done
@@ -10,13 +13,34 @@ import "./landingPage.css";
 const LandingPage = () => {
   return (
     <div className="landingPage--container">
-      <header></header>
+      <header>
+        <p className="header__title--style">Behavior Interview Helper</p>
+      </header>
       <main>
         <div className="landingPage__content--container">
-          <div className="landingPage__contentImage--container"></div>
-          <div className="landingPage__contentText--container"></div>
+          <div className="landingPage__contentImage--container">
+            <div>
+              <p>"Tell me about yourself"</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+            </div>
+            
+            <picture>
+              <source media="(max-width:500px)" srcset={smallSpeaker} />
+              <source media="(min-width:501px)" srcset={largeSpeaker} />
+            </picture>
+          </div>
+          <div className="landingPage__contentText--container">
+            <h1 className="page__title--style showDesktopView">Practice for the Interview</h1>
+            <p><span>Think </span>of your answer</p>
+            <p><span>Say </span>your answer</p>
+            <p><span>Read </span>your answer</p>
+            <p><span>Edit </span>your answer</p>
+          </div>
         </div>
-        <div className="landingPage__contentCTA--container"></div>
+        <div className="landingPage__contentCTA--container">
+          <button type="button" className="contentCTA__button--style">Practice</button>
+        </div>
       </main>
     </div>
   );
