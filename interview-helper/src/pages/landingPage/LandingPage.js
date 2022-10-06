@@ -1,15 +1,8 @@
 import "./landingPage.css";
 import smallSpeaker from "../../images/speaking-1-80p.png";
 import largeSpeaker from "../../images/speaking-2-90p.png";
+import smallerSpeaker from "../../images/speaking-4-80p.png";
 
-/**
- * Setup Landing Page architeture - done
- * Setup initial responsive designs - done
- * Setup HTML elements and styles names - done
- * Setup root global styles - done
- * Setup styles
- * @returns
- */
 const LandingPage = () => {
   return (
     <div className="landingPage--container">
@@ -27,9 +20,10 @@ const LandingPage = () => {
             </div>
             
             <picture className="contentImage__container--placement">
-              <source media="(max-width:500px)" srcset={smallSpeaker} />
-              <source media="(min-width:501px)" srcset={smallSpeaker} />
-              <img className="landingPage__img--style" src={largeSpeaker} alt="" />
+              <source media="(min-width:500px)" srcset={largeSpeaker} />
+              <source media="(min-width:366px)" srcset={smallSpeaker} />
+              <source media="(max-width:365px)" srcset={smallerSpeaker} />
+              <img className="landingPage__img--style" src={smallSpeaker} alt="" />
             </picture>
           </div>
           <div className="landingPage__contentText--container">

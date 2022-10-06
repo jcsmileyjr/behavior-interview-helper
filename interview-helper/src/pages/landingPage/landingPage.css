@@ -45,9 +45,9 @@ main {
     margin:10px 0 0 -10px;  
     padding: 20px;
     background: white;
-    -moz-border-radius: 100px / 70px;
-    -webkit-border-radius: 100px / 70px;
-    border-radius: 100px / 70px;
+    -moz-border-radius: 100px / 90px;
+    -webkit-border-radius: 100px / 90px;
+    border-radius: 100px / 90px;
     border: #707070 .5px solid;
     display: flex;
     flex-direction: column;
@@ -59,10 +59,14 @@ main {
 .contentImage__title--style {
     text-decoration: underline;
     margin-top: 0;
+    color: var(--Primary-Dark-Blue);
+    font-weight: bold;
 }
 
 .contentImage__content--style {
     margin-top: 0;
+    font-size: var(--Paragraph-Text-Font-Size);
+    color: var(--Primary-Medium-Blue)l
 }
 
 .contentImage__container--placement {
@@ -70,8 +74,6 @@ main {
 }
 
 .landingPage__contentText--container {
-    background-color: yellow; /*testing*/
-    border: 1px solid red; /*testing*/
     flex: 1;
 }
 
@@ -82,11 +84,19 @@ main {
 }
 
 .landingPage__contentText--container > p {
-    color: orange; /*testing*/
+    color: #707070;
+    font-size: var(--Header-Mobile-Font-Size);
+    margin: 1px 0;
 }
 
 .landingPage__contentText--container > p >span {
-    color:black; /*testing*/
+    color:var(--Primary-Dark-Blue);
+    font-weight: bold;
+}
+
+.page__title--style {
+    color: var(--Primary-Dark-Blue);
+    font-size: var(--Header-Mobile-Font-Size);
 }
 
 .showDesktopView {
@@ -108,6 +118,9 @@ main {
 
     .contentImage__text--container {
         margin:0px 15px 0 15px;
+        -moz-border-radius: 100px / 70px;
+        -webkit-border-radius: 100px / 70px;
+        border-radius: 100px / 70px;
     }
 }
 
