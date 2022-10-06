@@ -24,17 +24,49 @@ main {
 }
 
 .landingPage__content--container {
-    background-color: olive; /*testing*/
-    border: 1px solid red; /*testing*/
-    flex: 6;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.landingPage__contentImage--container { 
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
 
-.landingPage__contentImage--container { 
-    background-color: green; /*testing*/
-    border: 1px solid red; /*testing*/
-    flex: 2;
+.landingPage__img--style {
+    
+}
+
+.contentImage__text--container {
+
+    margin:10px 0 0 -10px;  
+    padding: 20px;
+    background: white;
+    -moz-border-radius: 100px / 70px;
+    -webkit-border-radius: 100px / 70px;
+    border-radius: 100px / 70px;
+    border: #707070 .5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--Paragraph-Text-Font-Size);
+}
+
+.contentImage__title--style {
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.contentImage__content--style {
+    margin-top: 0;
+}
+
+.contentImage__container--placement {
+    text-align: center;
 }
 
 .landingPage__contentText--container {
@@ -46,7 +78,7 @@ main {
 .landingPage__contentCTA--container {
     background-color: purple; /*testing*/
     border: 1px solid red; /*testing*/
-    flex: 1;
+    flex: 2;
 }
 
 .landingPage__contentText--container > p {
@@ -72,6 +104,10 @@ main {
     }
     .showDesktopView {
         display:block;
+    }
+
+    .contentImage__text--container {
+        margin:0px 15px 0 15px;
     }
 }
 

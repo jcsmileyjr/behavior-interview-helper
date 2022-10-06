@@ -1,6 +1,6 @@
 import "./landingPage.css";
 import smallSpeaker from "../../images/speaking-1-80p.png";
-import largeSpeaker from "../../images/speaking-2.png";
+import largeSpeaker from "../../images/speaking-2-90p.png";
 
 /**
  * Setup Landing Page architeture - done
@@ -19,16 +19,17 @@ const LandingPage = () => {
       <main>
         <div className="landingPage__content--container">
           <div className="landingPage__contentImage--container">
-            <div>
-              <p>"Tell me about yourself"</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            <div className="contentImage__text--container">
+              <p className="contentImage__title--style">"Tell me about yourself"</p>
+              
+              <p className="contentImage__content--style">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
             </div>
             
-            <picture>
+            <picture className="contentImage__container--placement">
               <source media="(max-width:500px)" srcset={smallSpeaker} />
-              <source media="(min-width:501px)" srcset={largeSpeaker} />
-              <img src={largeSpeaker} alt="" />
+              <source media="(min-width:501px)" srcset={smallSpeaker} />
+              <img className="landingPage__img--style" src={largeSpeaker} alt="" />
             </picture>
           </div>
           <div className="landingPage__contentText--container">
