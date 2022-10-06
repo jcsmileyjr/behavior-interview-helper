@@ -1,15 +1,20 @@
 .landingPage--container {
-    background-color: black; /*testing*/
-    border: 1px solid blue; /*testing*/
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: pink; /*testing*/
-    border: 1px solid red; /*testing*/
-    flex: 1;
+    flex: .5;
+}
+
+.header__title--style {
+    color: var(--Primary-Dark-Blue);
+    font-weight: bold;
+    font-size: var(--Header-Mobile-Font-Size);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 main {
