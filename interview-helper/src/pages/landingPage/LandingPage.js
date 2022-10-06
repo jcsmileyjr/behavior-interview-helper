@@ -28,6 +28,7 @@ const LandingPage = () => {
             <picture>
               <source media="(max-width:500px)" srcset={smallSpeaker} />
               <source media="(min-width:501px)" srcset={largeSpeaker} />
+              <img src={largeSpeaker} alt="" />
             </picture>
           </div>
           <div className="landingPage__contentText--container">
