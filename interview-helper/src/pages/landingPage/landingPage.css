@@ -78,9 +78,10 @@ main {
 }
 
 .landingPage__contentCTA--container {
-    background-color: purple; /*testing*/
-    border: 1px solid red; /*testing*/
     flex: 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .landingPage__contentText--container > p {
@@ -103,10 +104,25 @@ main {
     display:none;
 }
 
+.contentCTA__button--style {
+    background-color: var(--Accent-Light-Orange);
+    color: var(--Primary-Medium-Blue);
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    font-size: var(--Header-Mobile-Font-Size);
+    max-height: 50px;
+    margin-top: 20px;
+}
+
 
 @media only screen and (min-width:500px){
     .landingPage__content--container {
         flex-direction: row;
+    }
+
+    .landingPage__contentText--container {
+        /* display: flex; */
     }
 
     .landingPage__contentImage--container, .landingPage__contentText--container {
@@ -121,6 +137,11 @@ main {
         -moz-border-radius: 100px / 70px;
         -webkit-border-radius: 100px / 70px;
         border-radius: 100px / 70px;
+    }
+
+    .contentCTA__button--style {
+        width: 30%;
+        margin-top: 0;
     }
 }
 
