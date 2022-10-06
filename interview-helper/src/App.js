@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import LandingPage from './pages/landingPage/LandingPage';
+import AdmingPage from './pages/adminPage/AdminPage';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <AdmingPage />
     </div>
   );
 }
