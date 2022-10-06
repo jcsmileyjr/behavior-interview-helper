@@ -5,8 +5,8 @@ import largeSpeaker from "../../images/speaking-2.png";
 /**
  * Setup Landing Page architeture - done
  * Setup initial responsive designs - done
- * Setup HTML elements and styles names
- * Setup root global styles
+ * Setup HTML elements and styles names - done
+ * Setup root global styles - done
  * Setup styles
  * @returns
  */

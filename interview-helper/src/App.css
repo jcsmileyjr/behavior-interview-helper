@@ -1,6 +1,21 @@
+:root {
+  --Primary-Sandy-Beige: #fef6e4; /*Primary button color, Secondary text color*/
+  --Primary-Dark-Blue: #001858; /*Headers, Page titles*/
+  --Primary-Medium-Blue: #172c66; /*Primary Text color*/
+  --Accent-Pink: #f582ae; /**/
+  --Accent-Light-Orange: #f3d2c1; /**/
+  --Accent-Light-Blue: #8bd3dd; /**/
+  --Accent-Medium-Green: #446E38; /**/
+
+  --Header-Desktop-Font-Size: 30px;
+  --Header-Mobile-Font-Size: 20px;
+  --Paragraph-Text-Font-Size: 16px;
+}
+
 .App {
   background-color: gainsboro;
   height: 100vh;
+  
 }
 
 .page__title--style {
