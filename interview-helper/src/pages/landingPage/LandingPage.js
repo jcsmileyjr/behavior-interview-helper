@@ -27,11 +27,13 @@ const LandingPage = () => {
             </picture>
           </div>
           <div className="landingPage__contentText--container">
-            <h1 className="page__title--style showDesktopView">Practice for the Interview</h1>
-            <p><span>Think </span>of your answer</p>
-            <p><span>Say </span>your answer</p>
-            <p><span>Read </span>your answer</p>
-            <p><span>Edit </span>your answer</p>
+            <div>
+              <h1 className="page__title--style showDesktopView">Practice for the Interview</h1>
+              <p><span>Think </span>of your answer</p>
+              <p><span>Say </span>your answer</p>
+              <p><span>Read </span>your answer</p>
+              <p><span>Edit </span>your answer</p>
+            </div>
           </div>
         </div>
         <div className="landingPage__contentCTA--container">

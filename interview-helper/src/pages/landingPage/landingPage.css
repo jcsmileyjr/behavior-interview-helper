@@ -121,12 +121,10 @@ main {
         flex-direction: row;
     }
 
-    .landingPage__contentText--container {
-        /* display: flex; */
-    }
-
     .landingPage__contentImage--container, .landingPage__contentText--container {
         flex: 1;
+        display: flex;
+        justify-content: center;
     }
     .showDesktopView {
         display:block;
