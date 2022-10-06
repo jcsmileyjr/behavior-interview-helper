@@ -84,13 +84,13 @@ main {
     align-content: center;
 }
 
-.landingPage__contentText--container > p {
+.landingPage__contentText--container > div > p {
     color: #707070;
     font-size: var(--Header-Mobile-Font-Size);
     margin: 1px 0;
 }
 
-.landingPage__contentText--container > p >span {
+.landingPage__contentText--container >div > p >span {
     color:var(--Primary-Dark-Blue);
     font-weight: bold;
 }
