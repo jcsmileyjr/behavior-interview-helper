@@ -5,7 +5,7 @@ import AdmingPage from './pages/adminPage/AdminPage';
 function App() {
   return (
     <div className="App">
-      <AdmingPage />
+      <LandingPage />
     </div>
   );
 }

@@ -15,9 +15,10 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-top: 5px;
 }
 
-main {
+.landingPage--contianer > main {
     flex: 7;
     display: flex;
     flex-direction: column;
