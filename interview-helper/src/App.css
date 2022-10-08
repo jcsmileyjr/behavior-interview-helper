@@ -17,7 +17,16 @@
   
 }
 
-.page__title--style {
-  font-size: 30px;
+header {
+  flex: .5;
+}
+
+.header__title--style {
+  color: var(--Primary-Dark-Blue);
   font-weight: bold;
+  font-size: var(--Header-Mobile-Font-Size);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5px;
 }

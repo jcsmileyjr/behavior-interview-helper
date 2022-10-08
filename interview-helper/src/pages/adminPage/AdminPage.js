@@ -1,12 +1,25 @@
 import './adminPage.css';
 
+/**
+ * Setup HTML & Content architecture - DONE
+ * Setup section design responsiveness
+ *  - Mobile
+ *  - Desktop
+ * Setup styling for page elements
+ *  - Get one card looking correct
+ *  - Break off into a component
+ * Setup design responsiveness for cards
+ *  - dummy data for 9 cards
+ *  
+ * @returns 
+ */
 const AdmingPage = () => {
     return(
-        <div>
-            <header> Behavior Interview Helper</header>
-            <div className="adminPage--container">
+        <div className="adminPage--container">
+            <header className="header__title--style"> Behavior Interview Helper</header>
+            <main className="adminPage__content--container">
                 <p className="adminPage__pageTitle--style">Choose One</p>
-                <main>
+                <article>
                     <div class="card">
                         <div>
                             <p>Topic: Teamwork</p>
@@ -21,8 +34,8 @@ const AdmingPage = () => {
                             <button type="button">Practice</button> 
                         </div>
                     </div>
-                </main>
-            </div>
+                </article>
+            </main>
         </div>
     )
 }
