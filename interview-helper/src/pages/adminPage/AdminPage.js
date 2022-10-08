@@ -19,22 +19,105 @@ const AdmingPage = () => {
             <header className="header__title--style"> Behavior Interview Helper</header>
             <main className="adminPage__content--container">
                 <p className="adminPage__pageTitle--style">Choose One</p>
-                <article>
-                    <div class="card">
-                        <div>
-                            <p>Topic: Teamwork</p>
+                <div className="adminPage__card--container">
+                    <article>
+                        <div class="card">
+                            <div>
+                                <p>Topic: Teamwork</p>
+                            </div>
+                            <div>
+                                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                            </div>
+                            <div>
+                                <span>plus</span> More
+                            </div>
+                            <div>
+                                <button type="button">Practice</button> 
+                            </div>
                         </div>
-                        <div>
-                            <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div>
+                                <p>Topic: Teamwork</p>
+                            </div>
+                            <div>
+                                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                            </div>
+                            <div>
+                                <span>plus</span> More
+                            </div>
+                            <div>
+                                <button type="button">Practice</button> 
+                            </div>
                         </div>
-                        <div>
-                            <span>plus</span> More
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div>
+                                <p>Topic: Teamwork</p>
+                            </div>
+                            <div>
+                                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                            </div>
+                            <div>
+                                <span>plus</span> More
+                            </div>
+                            <div>
+                                <button type="button">Practice</button> 
+                            </div>
                         </div>
-                        <div>
-                            <button type="button">Practice</button> 
+                    </article>  
+                    <article>
+                        <div class="card">
+                            <div>
+                                <p>Topic: Teamwork</p>
+                            </div>
+                            <div>
+                                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                            </div>
+                            <div>
+                                <span>plus</span> More
+                            </div>
+                            <div>
+                                <button type="button">Practice</button> 
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div>
+                                <p>Topic: Teamwork</p>
+                            </div>
+                            <div>
+                                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                            </div>
+                            <div>
+                                <span>plus</span> More
+                            </div>
+                            <div>
+                                <button type="button">Practice</button> 
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div>
+                                <p>Topic: Teamwork</p>
+                            </div>
+                            <div>
+                                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                            </div>
+                            <div>
+                                <span>plus</span> More
+                            </div>
+                            <div>
+                                <button type="button">Practice</button> 
+                            </div>
+                        </div>
+                    </article>                                                   
+
+                </div>
             </main>
         </div>
     )

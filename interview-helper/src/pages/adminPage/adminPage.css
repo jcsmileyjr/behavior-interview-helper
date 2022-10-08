@@ -2,7 +2,40 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: gray;
+}
+
+header {
+    background-color: gray; /*TESTING ONLY*/
+}
+
+main {
+    background-color: pink; /*TESTING ONLY*/
+}
+
+.adminPage__content--container {
+    margin: 0 20px;
+}
+
+.adminPage__card--container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    row-gap: 15px;
+}
+
+article {
+    background-color: aqua;
+    /* margin: 10px 0; */
+}
+
+@media only screen and (min-width:500px){
+    .adminPage__card--container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
 }
 
 
