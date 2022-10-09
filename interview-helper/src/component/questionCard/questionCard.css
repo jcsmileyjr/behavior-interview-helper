@@ -52,3 +52,31 @@ article {
     border-radius: 20px;
     margin-bottom: 10px;
 }
+
+.modal__button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__title--style {
+    color: var(--Primary-Dark-Blue);
+}
+
+.modal__intent--style {
+    color: var(--Primary-Medium-Blue);
+}
+
+.modal__example--style {
+    color:var(--Primary-Dark-Blue);
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:650px){
+    .ReactModal__Content {
+        position: relative !important;
+    }
+
+}
