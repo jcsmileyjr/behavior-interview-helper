@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import fakeData from "../../development-data/questions.json";
 import "./adminPage.css";
 import QuestionCard from "../../component/questionCard/QuestionCard";
@@ -9,7 +9,6 @@ const AdmingPage = () => {
   return (
     <div className="adminPage--container">
       <header className="header__title--style">
-        {" "}
         Behavior Interview Helper
       </header>
       <main className="adminPage__content--container">

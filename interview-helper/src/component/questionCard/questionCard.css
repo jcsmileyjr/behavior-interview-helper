@@ -13,10 +13,12 @@ article {
 
 .card__title--container  {
     background-color: var(--Accent-Light-Blue);
+    border-bottom: 1px solid var(--Primary-Dark-Blue);
 }
 
 .card__title--container > p {
     color: var(--Primary-Medium-Blue);
+    margin: 5px 0;
 }
 
 .card__question--container {
