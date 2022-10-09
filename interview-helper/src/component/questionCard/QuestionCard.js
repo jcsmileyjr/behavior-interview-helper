@@ -1,7 +1,7 @@
 import './questionCard.css';
 import PlusSign from "../../images/plus-sign.png";
 
-const QuestionCard = () => {
+const QuestionCard = ({topic, content}) => {
     return(
         <article className="card">                        
             <div className="card__title--container card__content--margin">
