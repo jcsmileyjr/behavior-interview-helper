@@ -10,7 +10,7 @@ const RecordingPage = () => {
       <main>
         <section className="recordingPage__image--container">
           <h1>Playing</h1>
-          <img src={Noise} alt="icon of sound" />
+          <img src={Noise} alt="icon of sound" className="recordingPage__image--style" />
         </section>
         <div className="recordingPage__content--container">
           <section className="content__recording--container">

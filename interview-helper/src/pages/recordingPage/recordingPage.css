@@ -3,3 +3,61 @@
     display: flex;
     flex-direction: column;
 }
+
+.recordingPage--container > main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__recording--container > h3, .content__previousAnswer--container > h3 {
+    text-align: center;
+    color: var(--Primary-Dark-Blue)
+}
+
+.content__recording--container > p, .content__previousAnswer--container > p {
+    color: var(--Primary-Medium-Blue);
+}
+
+.content__recording--container, .content__previousAnswer--container {
+    border: 1px solid var(--Primary-Dark-Blue);
+    padding: 10px;
+    margin: 15px;
+}
+
+.recordingPage__image--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+.recordingPage__image--container > h1 {
+    margin-top: 0;
+    color: var(--Primary-Medium-Blue);
+}
+
+.recordingPage__image--style {
+    max-height: 10vh;
+}
+
+.recordingPage__content--container {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+
+.recordingPage__controls--container {
+    flex: 1;
+}
+
+@media only screen and (min-width:650px){
+    .recordingPage__image--style {
+        max-height: 15vh;
+    }
+
+    .recordingPage__content--container {
+        flex-direction: row;
+    }
+}
