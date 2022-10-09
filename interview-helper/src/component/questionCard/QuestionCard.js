@@ -1,14 +1,15 @@
 import './questionCard.css';
 import PlusSign from "../../images/plus-sign.png";
 
-const QuestionCard = ({topic, content}) => {
+const QuestionCard = ({question}) => {
+    const {topic, content} = question;
     return(
         <article className="card">                        
             <div className="card__title--container card__content--margin">
-                <p>Topic: Teamwork</p>
+                <p>Topic: {topic}</p>
             </div>
             <div className="card__content--margin card__question--container">
-                <p>Tell me about a time when you had to work closely with someone whose personality was very different from yours?</p>
+                <p>{content}</p>
             </div>
             <div className="card__content--margin card__details--container">
                 <img className="card__image--style" src={PlusSign} alt="clickable plus sign to provide more details on question" /> More

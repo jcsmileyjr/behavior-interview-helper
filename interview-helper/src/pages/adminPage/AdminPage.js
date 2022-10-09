@@ -16,7 +16,7 @@ const AdmingPage = () => {
         <p className="adminPage__pageTitle--style">Choose One</p>
         <div className="adminPage__card--container">
           {questions.map((question) => (
-            <QuestionCard key={question.id} />
+            <QuestionCard key={question.id} question={question} />
           ))}
         </div>
       </main>
