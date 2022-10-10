@@ -3,7 +3,7 @@ import smallSpeaker from "../../images/speaking-1-80p.png";
 import largeSpeaker from "../../images/speaking-2-90p.png";
 import smallerSpeaker from "../../images/speaking-4-80p.png";
 
-const LandingPage = () => {
+const LandingPage = ({next}) => {
   return (
     <div className="landingPage--container">
       <header>
@@ -20,9 +20,9 @@ const LandingPage = () => {
             </div>
             
             <picture className="contentImage__container--placement">
-              <source media="(min-width:500px)" srcset={largeSpeaker} />
-              <source media="(min-width:366px)" srcset={smallSpeaker} />
-              <source media="(max-width:365px)" srcset={smallerSpeaker} />
+              <source media="(min-width:500px)" srcSet={largeSpeaker} />
+              <source media="(min-width:366px)" srcSet={smallSpeaker} />
+              <source media="(max-width:365px)" srcSet={smallerSpeaker} />
               <img className="landingPage__img--style" src={smallSpeaker} alt="" />
             </picture>
           </div>
@@ -37,7 +37,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="landingPage__contentCTA--container">
-          <button type="button" className="contentCTA__button--style">Practice</button>
+          <button onClick={() => next()} type="button" className="contentCTA__button--style">Practice</button>
         </div>
       </main>
     </div>
