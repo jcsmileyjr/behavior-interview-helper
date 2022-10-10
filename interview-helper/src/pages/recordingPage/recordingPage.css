@@ -50,6 +50,39 @@
 
 .recordingPage__controls--container {
     flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.control > button {
+    background-color: transparent;
+    border: none;
+}
+
+.control > button > img {
+    max-height: 5vh;
+}
+
+.stop-button {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.new-Question-button {
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 50px solid red;
+    border-radius: 50%;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (min-width:650px){

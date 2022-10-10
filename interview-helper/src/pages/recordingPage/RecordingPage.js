@@ -1,5 +1,9 @@
 import "./recordingPage.css";
 import Noise from "../../images/noise-icon.png";
+import PlayIcon from "../../images/play-icon.png";
+import PauseIcon from "../../images/pause-icon.png";
+import StopIcon from "../../images/stop-icon.png";
+import NewQuestionIcon from "../../images/newQuestion-icon.png";
 
 const RecordingPage = () => {
   return (
@@ -10,7 +14,11 @@ const RecordingPage = () => {
       <main>
         <section className="recordingPage__image--container">
           <h1>Playing</h1>
-          <img src={Noise} alt="icon of sound" className="recordingPage__image--style" />
+          <img
+            src={Noise}
+            alt="icon of sound"
+            className="recordingPage__image--style"
+          />
         </section>
         <div className="recordingPage__content--container">
           <section className="content__recording--container">
@@ -37,10 +45,30 @@ const RecordingPage = () => {
           </section>
         </div>
         <div className="recordingPage__controls--container">
-          <button type="button">Play</button>
-          <button type="button">Pause</button>
-          <button type="button">Stop</button>
-          <button type="button">New Question</button>
+          <div className="control">
+            <button className="" type="button">
+              <img src={PlayIcon} alt="play button" />
+            </button>
+            <p>Play</p>
+          </div>
+          <div className="control">
+            <button type="button">
+              <img src={PauseIcon} alt="pause button" />
+            </button>
+            <p>Pause</p>
+          </div>
+          <div className="control">
+            <button type="button">
+                <img src={StopIcon} alt="stop button" />
+            </button>
+            <p>Stop</p>
+          </div>
+          <div className="control">
+            <button type="button">
+                <img src={NewQuestionIcon} alt="new questioin button" />
+            </button>
+            <p>New Question</p>
+          </div>
         </div>
       </main>
     </div>
