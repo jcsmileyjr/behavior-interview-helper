@@ -3,11 +3,13 @@ import "./editPage.css";
 const EditPage = () => {
   return (
     <div className="editPage--container">
-      <header>Behavior Interview Helper</header>
+      <header>
+        <p className="header__title--style">Behavior Interview Helper</p>
+      </header>
       <main>
         <h1>Edit Recording</h1>
-        <div>
-          <p>
+        <div className="recordingPage__content--container">
+          <p className="recordingPage__content--style">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -17,9 +19,9 @@ const EditPage = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div>
-          <button type="button">Save</button>
-          <button type="button">Redo</button>
+        <div className="recordingPage__button--container">
+          <button className="recordingPage__SaveButton--style" type="button">Save</button>
+          <button className="recordingPage__RedoButton--style" type="button">Redo</button>
         </div>
       </main>
     </div>
