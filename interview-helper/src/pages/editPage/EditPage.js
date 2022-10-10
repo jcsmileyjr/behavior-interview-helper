@@ -8,8 +8,8 @@ const EditPage = () => {
       </header>
       <main>
         <h1>Edit Recording</h1>
-        <div className="recordingPage__content--container">
-          <p className="recordingPage__content--style">
+        <div className="editPage__content--container">
+          <p className="editPage__content--style">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,9 +19,9 @@ const EditPage = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="recordingPage__button--container">
-          <button className="recordingPage__SaveButton--style" type="button">Save</button>
-          <button className="recordingPage__RedoButton--style" type="button">Redo</button>
+        <div className="editPage__button--container">
+          <button className="editPage__SaveButton--style" type="button">Save</button>
+          <button className="editPage__RedoButton--style" type="button">Redo</button>
         </div>
       </main>
     </div>

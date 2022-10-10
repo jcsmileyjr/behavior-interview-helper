@@ -11,23 +11,24 @@
     text-align: center;
 }
 
-.recordingPage__content--container {
+.editPage__content--container {
     border: 1px solid var(--Primary-Dark-Blue);
     padding: 10px;
     border-radius: 10px;
+    flex: 2;
 }
 
-.recordingPage__content--container > p {
+.editPage__content--container > p {
     color: var(--Primary-Medium-Blue);
 }
 
-.recordingPage__button--container {
+.editPage__button--container {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
 }
 
-.recordingPage__button--container > button {
+.editPage__button--container > button {
     padding: 15px;
     width: 40%;
     font-size: var(--Header-Desktop-Font-Size);
@@ -36,14 +37,26 @@
     border-radius: 10px;
 }
 
-.recordingPage__SaveButton--style {
+.editPage__SaveButton--style {
     background-color: var(--Accent-Medium-Green);
     color:var(--Primary-Sandy-Beige);
 }
 
-.recordingPage__RedoButton--style {
+.editPage__RedoButton--style {
     background-color: var(--Accent-Light-Orange);
     color: var(--Primary-Dark-Blue);
+}
+
+
+@media only screen and (min-width:650px){
+    .editPage__content--container {
+        margin: 0 10vw;
+    }
+    
+    .editPage__button--container {
+        margin: 20px 10vw;
+    }
+    
 }
 
 
