@@ -48,7 +48,7 @@ const QuestionCard = ({ question, start }) => {
         </span>
       </div>
       <div className="card__button--container">
-        <button type="button" className="card__button--style" onClick={start}>
+        <button type="button" className="card__button--style" onClick={() => start(question.content)}>
           Practice
         </button>
       </div>

@@ -5,11 +5,11 @@ import PauseIcon from "../../images/pause-icon.png";
 import StopIcon from "../../images/stop-icon.png";
 import NewQuestionIcon from "../../images/newQuestion-icon.png";
 
-const RecordingPage = () => {
+const RecordingPage = ({reviewQuestion}) => {
   return (
     <div className="recordingPage--container">
       <header>
-        <p className="header__title--style">Behavior Interview Helper</p>
+        <p className="header__title--style question-styling">{reviewQuestion}</p>
       </header>
       <main>
         <section className="recordingPage__image--container">

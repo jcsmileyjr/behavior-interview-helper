@@ -9,8 +9,10 @@ function App() {
   const [currentPage, setCurrentPage] = useState("LandingPage");
   const [currentQuestion, setCurrentQuestion] = useState("");
 
-  const startPractice = () => {
+  const startPractice = (practiceQuestion) => {
     setCurrentPage("RecordingPage");
+    console.log("Practice question ", practiceQuestion);
+    setCurrentQuestion(practiceQuestion)
   }
 
   const changePage = (page) => {
@@ -19,8 +21,8 @@ function App() {
   return (
     <div className="App">
       {currentPage === "LandingPage" && <LandingPage next={() => changePage("AdminPage")} />}
-      {currentPage === "AdminPage" && <AdminPage start={()=> startPractice()} />}
-      {currentPage === "RecordingPage" && <RecordingPage />}
+      {currentPage === "AdminPage" && <AdminPage start={startPractice} />}
+      {currentPage === "RecordingPage" && <RecordingPage reviewQuestion={currentQuestion} />}
       {currentPage === "EditPage" && <EditPage />}
     </div>
   );

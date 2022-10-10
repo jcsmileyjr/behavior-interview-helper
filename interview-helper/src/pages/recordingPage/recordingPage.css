@@ -85,6 +85,10 @@
     justify-content: center;
 }
 
+.question-styling {
+    margin: 0 15px;
+}
+
 @media only screen and (min-width:650px){
     .recordingPage__image--style {
         max-height: 15vh;
