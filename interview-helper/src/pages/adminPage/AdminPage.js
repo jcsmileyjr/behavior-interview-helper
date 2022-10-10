@@ -3,7 +3,7 @@ import fakeData from "../../development-data/questions.json";
 import "./adminPage.css";
 import QuestionCard from "../../component/questionCard/QuestionCard";
 
-const AdmingPage = () => {
+const AdmingPage = ({start}) => {
   const [questions, setQuestions] = useState(fakeData);
 
   return (
@@ -15,7 +15,7 @@ const AdmingPage = () => {
         <p className="adminPage__pageTitle--style">Choose One</p>
         <div className="adminPage__card--container" id="test">
           {questions.map((question) => (
-            <QuestionCard key={question.id} question={question} />
+            <QuestionCard key={question.id} question={question} start={start} />
           ))}
         </div>
       </main>

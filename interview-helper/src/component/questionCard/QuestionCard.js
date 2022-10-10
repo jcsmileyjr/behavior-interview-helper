@@ -13,7 +13,7 @@ const customStyles = {
   },
 };
 
-const QuestionCard = ({ question }) => {
+const QuestionCard = ({ question, start }) => {
   const { topic, content, intent, id } = question;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -48,7 +48,7 @@ const QuestionCard = ({ question }) => {
         </span>
       </div>
       <div className="card__button--container">
-        <button type="button" className="card__button--style">
+        <button type="button" className="card__button--style" onClick={start}>
           Practice
         </button>
       </div>
