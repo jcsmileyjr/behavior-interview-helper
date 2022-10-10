@@ -93,4 +93,12 @@
     .recordingPage__content--container {
         flex-direction: row;
     }
+
+    .recordingPage__controls--container {
+        margin:auto;
+    }
+
+    .control {
+        margin:0 10px;
+    }
 }
