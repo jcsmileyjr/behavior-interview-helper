@@ -16,11 +16,21 @@ const RecordingPage = ({ reviewQuestion, next }) => {
       <main>
         <section className="recordingPage__image--container">
           <h1>Playing</h1>
-          <img
-            src={Noise}
-            alt="icon of sound"
-            className="recordingPage__image--style"
-          />
+          <div class="animation-container">
+            <div class="sound-container">
+              <div class="rect-1"></div>
+              <div class="rect-2"></div>	
+              <div class="rect-3"></div>	
+              <div class="rect-4"></div>	
+              <div class="rect-5"></div>	
+              <div class="rect-6"></div>	
+              <div class="rect-5"></div>
+              <div class="rect-4"></div>	
+              <div class="rect-3"></div>
+              <div class="rect-2"></div>
+              <div class="rect-1"></div>	
+            </div>
+        </div>
         </section>
         <div className="recordingPage__content--container">
           <section className="content__recording--container">
