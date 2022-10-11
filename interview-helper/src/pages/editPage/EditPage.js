@@ -1,6 +1,6 @@
 import "./editPage.css";
 
-const EditPage = () => {
+const EditPage = ({ next }) => {
   return (
     <div className="editPage--container">
       <header>
@@ -20,8 +20,16 @@ const EditPage = () => {
           </p>
         </div>
         <div className="editPage__button--container">
-          <button className="editPage__SaveButton--style" type="button">Save</button>
-          <button className="editPage__RedoButton--style" type="button">Redo</button>
+          <button
+            className="editPage__SaveButton--style"
+            type="button"
+            onClick={() => next("RecordingPage")}
+          >
+            Save
+          </button>
+          <button className="editPage__RedoButton--style" type="button">
+            Redo
+          </button>
         </div>
       </main>
     </div>

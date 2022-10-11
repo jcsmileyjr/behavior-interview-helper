@@ -5,11 +5,13 @@ import PauseIcon from "../../images/pause-icon.png";
 import StopIcon from "../../images/stop-icon.png";
 import NewQuestionIcon from "../../images/newQuestion-icon.png";
 
-const RecordingPage = ({reviewQuestion}) => {
+const RecordingPage = ({ reviewQuestion, next }) => {
   return (
     <div className="recordingPage--container">
       <header>
-        <p className="header__title--style question-styling">{reviewQuestion}</p>
+        <p className="header__title--style question-styling">
+          {reviewQuestion}
+        </p>
       </header>
       <main>
         <section className="recordingPage__image--container">
@@ -58,14 +60,14 @@ const RecordingPage = ({reviewQuestion}) => {
             <p>Pause</p>
           </div>
           <div className="control">
-            <button type="button">
-                <img src={StopIcon} alt="stop button" />
+            <button type="button" onClick={() => next("EditPage")}>
+              <img src={StopIcon} alt="stop button" />
             </button>
             <p>Stop</p>
           </div>
           <div className="control">
-            <button type="button">
-                <img src={NewQuestionIcon} alt="new questioin button" />
+            <button type="button" onClick={() => next("AdminPage")}>
+              <img src={NewQuestionIcon} alt="new questioin button" />
             </button>
             <p>New Question</p>
           </div>

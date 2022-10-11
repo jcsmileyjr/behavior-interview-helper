@@ -37,7 +37,7 @@ const LandingPage = ({next}) => {
           </div>
         </div>
         <div className="landingPage__contentCTA--container">
-          <button onClick={() => next()} type="button" className="contentCTA__button--style">Practice</button>
+          <button onClick={() => next("AdminPage")} type="button" className="contentCTA__button--style">Practice</button>
         </div>
       </main>
     </div>

@@ -12,18 +12,20 @@ function App() {
   const startPractice = (practiceQuestion) => {
     setCurrentPage("RecordingPage");
     console.log("Practice question ", practiceQuestion);
-    setCurrentQuestion(practiceQuestion)
-  }
+    setCurrentQuestion(practiceQuestion);
+  };
 
   const changePage = (page) => {
     setCurrentPage(page);
   };
   return (
     <div className="App">
-      {currentPage === "LandingPage" && <LandingPage next={() => changePage("AdminPage")} />}
+      {currentPage === "LandingPage" && <LandingPage next={changePage} />}
       {currentPage === "AdminPage" && <AdminPage start={startPractice} />}
-      {currentPage === "RecordingPage" && <RecordingPage reviewQuestion={currentQuestion} />}
-      {currentPage === "EditPage" && <EditPage />}
+      {currentPage === "RecordingPage" && (
+        <RecordingPage reviewQuestion={currentQuestion} next={changePage} />
+      )}
+      {currentPage === "EditPage" && <EditPage next={changePage} />}
     </div>
   );
 }
