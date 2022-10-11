@@ -19,10 +19,12 @@ article {
 .card__title--container > p {
     color: var(--Primary-Medium-Blue);
     margin: 5px 0;
+    font-family: 'Spartan';
 }
 
 .card__question--container {
     color: var(--Primary-Medium-Blue);
+    font-weight: 600;
 }
 
 .card__details--container {
@@ -51,6 +53,8 @@ article {
     border: none;
     border-radius: 20px;
     margin-bottom: 10px;
+    font-family: 'Spartan';
+    font-weight: bold;
 }
 
 .modal__button--container {

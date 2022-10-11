@@ -12,6 +12,8 @@
   --Paragraph-Text-Font-Size: 16px;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Manrope:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Spartan:regular,bold,italic&subset=latin,latin-ext');
 .App {
   height: 100vh;
   
@@ -25,6 +27,7 @@ header {
   color: var(--Primary-Dark-Blue);
   font-weight: bold;
   font-size: var(--Header-Mobile-Font-Size);
+  /* font-family: 'Manrope'; */
   display: flex;
   justify-content: center;
   align-content: center;
