@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       {currentPage === "LandingPage" && <LandingPage next={changePage} />}
-      {currentPage === "AdminPage" && <AdminPage start={startPractice} />}
+      {currentPage === "AdminPage" && <AdminPage start={startPractice} next={changePage} />}
       {currentPage === "RecordingPage" && (
         <RecordingPage reviewQuestion={currentQuestion} next={changePage} />
       )}

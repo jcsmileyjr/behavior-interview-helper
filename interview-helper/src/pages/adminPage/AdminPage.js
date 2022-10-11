@@ -3,12 +3,12 @@ import fakeData from "../../development-data/questions.json";
 import "./adminPage.css";
 import QuestionCard from "../../component/questionCard/QuestionCard";
 
-const AdmingPage = ({start}) => {
+const AdmingPage = ({start, next}) => {
   const [questions, setQuestions] = useState(fakeData);
 
   return (
     <div className="adminPage--container">
-      <header className="header__title--style">
+      <header className="header__title--style" onClick={()=> next("LandingPage")}>
         Behavior Interview Helper
       </header>
       <main className="adminPage__content--container">

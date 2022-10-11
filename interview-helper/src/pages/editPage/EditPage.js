@@ -3,7 +3,7 @@ import "./editPage.css";
 const EditPage = ({ next }) => {
   return (
     <div className="editPage--container">
-      <header>
+      <header onClick={()=> next("LandingPage")}>
         <p className="header__title--style">Behavior Interview Helper</p>
       </header>
       <main>
