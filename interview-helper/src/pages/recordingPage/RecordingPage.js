@@ -1,4 +1,5 @@
 import "./recordingPage.css";
+import React, { useState } from "react";
 import Noise from "../../images/noise-icon.png";
 import PlayIcon from "../../images/play-icon.png";
 import PauseIcon from "../../images/pause-icon.png";
@@ -6,6 +7,21 @@ import StopIcon from "../../images/stop-icon.png";
 import NewQuestionIcon from "../../images/newQuestion-icon.png";
 
 const RecordingPage = ({ reviewQuestion, next }) => {
+  const [activateNoiseIcon, setActivateNoiseIcon] = useState(false);
+
+  const recordAnswer = () => {
+    setActivateNoiseIcon(true);
+  };
+
+  const pauseAnswer = () => {
+    setActivateNoiseIcon(false);
+  };
+
+  const stopAnswer = () => {
+    setActivateNoiseIcon(false);
+    next("EditPage");
+  };
+
   return (
     <div className="recordingPage--container">
       <header>
@@ -16,21 +32,30 @@ const RecordingPage = ({ reviewQuestion, next }) => {
       <main>
         <section className="recordingPage__image--container">
           <h1>Playing</h1>
-          <div class="animation-container">
-            <div class="sound-container">
-              <div class="rect-1"></div>
-              <div class="rect-2"></div>	
-              <div class="rect-3"></div>	
-              <div class="rect-4"></div>	
-              <div class="rect-5"></div>	
-              <div class="rect-6"></div>	
-              <div class="rect-5"></div>
-              <div class="rect-4"></div>	
-              <div class="rect-3"></div>
-              <div class="rect-2"></div>
-              <div class="rect-1"></div>	
-            </div>
-        </div>
+          <div className="animation-container">
+            {activateNoiseIcon &&
+              <div className="sound-container">
+                <div class="rect-1"></div>
+                <div class="rect-2"></div>
+                <div class="rect-3"></div>
+                <div class="rect-4"></div>
+                <div class="rect-5"></div>
+                <div class="rect-6"></div>
+                <div class="rect-5"></div>
+                <div class="rect-4"></div>
+                <div class="rect-3"></div>
+                <div class="rect-2"></div>
+                <div class="rect-1"></div>
+              </div>
+            }
+            {!activateNoiseIcon && 
+              <img
+                src={Noise}
+                alt="icon of sound"
+                className="recordingPage__image--style"
+              />
+            }
+          </div>
         </section>
         <div className="recordingPage__content--container">
           <section className="content__recording--container">
@@ -58,19 +83,19 @@ const RecordingPage = ({ reviewQuestion, next }) => {
         </div>
         <div className="recordingPage__controls--container">
           <div className="control">
-            <button className="" type="button">
+            <button type="button" onClick={() => recordAnswer()}>
               <img src={PlayIcon} alt="play button" />
             </button>
             <p>Play</p>
           </div>
           <div className="control">
-            <button type="button">
+            <button type="button" onClick={() => pauseAnswer()}>
               <img src={PauseIcon} alt="pause button" />
             </button>
             <p>Pause</p>
           </div>
           <div className="control">
-            <button type="button" onClick={() => next("EditPage")}>
+            <button type="button" onClick={() => stopAnswer()}>
               <img src={StopIcon} alt="stop button" />
             </button>
             <p>Stop</p>
