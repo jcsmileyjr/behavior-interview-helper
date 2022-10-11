@@ -2,6 +2,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Manrope';
 }
 
 .recordingPage--container > main {
@@ -11,7 +12,8 @@
 
 .content__recording--container > h3, .content__previousAnswer--container > h3 {
     text-align: center;
-    color: var(--Primary-Dark-Blue)
+    color: var(--Primary-Dark-Blue);
+    font-family: 'Spartan';
 }
 
 .content__recording--container > p, .content__previousAnswer--container > p {
@@ -36,6 +38,7 @@
 .recordingPage__image--container > h1 {
     margin-top: 0;
     color: var(--Primary-Medium-Blue);
+    font-family: 'Spartan';
 }
 
 .recordingPage__image--style {
@@ -54,6 +57,7 @@
     flex: 1;
     display: flex;
     justify-content: space-around;
+    font-family: 'Spartan';
 }
 
 .control > button {
@@ -69,15 +73,6 @@
     width: 50px;
     height: 50px;
     background: red;
-}
-
-.new-Question-button {
-    width: 0;
-    height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 50px solid red;
-    border-radius: 50%;
 }
 
 .control {
