@@ -2,6 +2,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Manrope';
 }
 
 .landingPage__content--container {
@@ -42,6 +43,7 @@
     margin-top: 0;
     color: var(--Primary-Dark-Blue);
     font-weight: bold;
+    font-family: 'Spartan';
 }
 
 .contentImage__content--style {
@@ -74,11 +76,13 @@
 .landingPage__contentText--container >div > p >span {
     color:var(--Primary-Dark-Blue);
     font-weight: bold;
+    font-family: 'Spartan';
 }
 
 .page__title--style {
     color: var(--Primary-Dark-Blue);
     font-size: var(--Header-Mobile-Font-Size);
+    font-family: 'Spartan';
 }
 
 .showDesktopView {
@@ -88,6 +92,7 @@
 .contentCTA__button--style {
     background-color: var(--Accent-Light-Orange);
     color: var(--Primary-Medium-Blue);
+    font-family: 'Spartan';
     padding: 10px;
     width: 80%;
     border-radius: 20px;
