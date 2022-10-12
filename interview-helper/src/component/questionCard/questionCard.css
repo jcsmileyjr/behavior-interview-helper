@@ -63,6 +63,30 @@ article {
     align-items: center;
 }
 
+.teamworkBGColor {
+    background-color: var(--Accent-Light-Blue);
+}
+
+.timeManagmentBGColor {
+    background-color: var(--Primary-Sandy-Beige);
+}
+
+/* .timeManagmentBGColor > p {
+    color: var(--Primary-Sandy-Beige);
+} */
+
+.motivationValuesBGColor {
+    background-color: #AB7272;
+}
+
+.communicationBGColor {
+    background-color: var(--Accent-Light-Orange);
+}
+
+.otherBGColor {
+    background-color: var(--Accent-Pink);
+}
+
 .modal__title--style {
     color: var(--Primary-Dark-Blue);
 }

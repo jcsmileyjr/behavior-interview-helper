@@ -2,6 +2,7 @@ import Modal from "react-modal";
 import React from "react";
 import "./questionCard.css";
 import PlusSign from "../../images/plus-sign.png";
+import { useState } from "react";
 
 const customStyles = {
   content: {
@@ -16,6 +17,21 @@ const customStyles = {
 const QuestionCard = ({ question, start }) => {
   const { topic, content, intent, id } = question;
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [backgroundColor, setBackgroundColor] = useState('Teamwork');
+
+  React.useEffect(() => {
+    if(question.topic === "Teamwork"){
+      setBackgroundColor("teamworkBGColor");
+    }else if(question.topic ==="Time Managment"){
+      setBackgroundColor("timeManagmentBGColor")
+    }else if(question.topic === "MotivationValues"){
+      setBackgroundColor("motivationValuesBGColor")
+    }else if(question.topic ==="Communication"){
+      setBackgroundColor("communicationBGColor")
+    }else{
+      setBackgroundColor("otherBGColor");
+    }
+  }, [question.topic]);
 
   function openModal() {
     setIsOpen(true);
@@ -27,7 +43,7 @@ const QuestionCard = ({ question, start }) => {
 
   return (
     <article className="card" id="card">
-      <div className="card__title--container card__content--margin">
+      <div className={`card__title--container card__content--margin ${backgroundColor}`}>
         <p>Topic: {topic}</p>
       </div>
       <div className="card__content--margin card__question--container">

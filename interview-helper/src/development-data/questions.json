@@ -6,13 +6,13 @@
         "id":1
     },
     {
-        "content":"Tell me about a time when you had to work closely with someone whose personality was very different from yours?",
+        "content":"Tell me about a time when you successfully explained a technical problem to a colleague or a customer who didn’t have a tech background?",
         "intent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "topic":"Teamwork",
         "id":2
     },
     {
-        "content":"Tell me about a time when you had to work closely with someone whose personality was very different from yours?",
+        "content":"Talk about a situation when your team members disagreed with you. How did you handle it?",
         "intent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "topic":"Teamwork",
         "id":3
@@ -24,13 +24,13 @@
         "id":4
     },
     {
-        "content":"Tell me about a time you set a goal for yourself. How did you go about ensuring that you would meet your objective?",
+        "content":"Think about a time when you were overwhelmed and stressed. How did you handle it?",
         "intent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "topic":"Time Managment",
         "id":5
     },
     {
-        "content":"Tell me about a time you set a goal for yourself. How did you go about ensuring that you would meet your objective?",
+        "content":"How do you estimate a reasonable time to complete a task?",
         "intent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "topic":"Time Managment",
         "id":6
@@ -48,9 +48,9 @@
         "id":8
     },
     {
-        "content":"Describe a time when you saw a problem and took the initiative to correct it?",
+        "content":"Give an example of when you persuaded someone at work towards your point of view. Was it a positive outcome?",
         "intent":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "topic":"Motivation and Values",
+        "topic":"Communication",
         "id":9
     }
 
