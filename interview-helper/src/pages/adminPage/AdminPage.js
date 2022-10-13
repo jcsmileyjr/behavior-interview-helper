@@ -1,10 +1,11 @@
-import React, { useState} from "react";
+//import React, { useState} from "react";
+import React from "react";
 import fakeData from "../../development-data/questions.json";
 import "./adminPage.css";
 import QuestionCard from "../../component/questionCard/QuestionCard";
 
 const AdmingPage = ({start, next}) => {
-  const [questions, setQuestions] = useState(fakeData);
+  //const [questions, setQuestions] = useState(fakeData);
 
   return (
     <div className="adminPage--container">
@@ -14,7 +15,7 @@ const AdmingPage = ({start, next}) => {
       <main className="adminPage__content--container">
         <p className="adminPage__pageTitle--style">Choose One</p>
         <div className="adminPage__card--container" id="test">
-          {questions.map((question) => (
+          {fakeData.map((question) => (
             <QuestionCard key={question.id} question={question} start={start} />
           ))}
         </div>
