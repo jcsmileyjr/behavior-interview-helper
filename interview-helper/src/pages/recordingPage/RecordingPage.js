@@ -11,6 +11,15 @@ const RecordingPage = ({ reviewQuestion, next }) => {
 
   const recordAnswer = () => {
     setActivateNoiseIcon(true);
+    let url = "https://static.deepgram.com/examples/nasa-spacewalk-interview.wav";
+    fetch('/.netlify/functions/hosted', {
+      method: 'POST',
+      body: JSON.stringify({ url }),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        console.log(data)
+      })
   };
 
   const pauseAnswer = () => {
@@ -35,17 +44,17 @@ const RecordingPage = ({ reviewQuestion, next }) => {
           <div className="animation-container">
             {activateNoiseIcon &&
               <div className="sound-container">
-                <div class="rect-1"></div>
-                <div class="rect-2"></div>
-                <div class="rect-3"></div>
-                <div class="rect-4"></div>
-                <div class="rect-5"></div>
-                <div class="rect-6"></div>
-                <div class="rect-5"></div>
-                <div class="rect-4"></div>
-                <div class="rect-3"></div>
-                <div class="rect-2"></div>
-                <div class="rect-1"></div>
+                <div className="rect-1"></div>
+                <div className="rect-2"></div>
+                <div className="rect-3"></div>
+                <div className="rect-4"></div>
+                <div className="rect-5"></div>
+                <div className="rect-6"></div>
+                <div className="rect-5"></div>
+                <div className="rect-4"></div>
+                <div className="rect-3"></div>
+                <div className="rect-2"></div>
+                <div className="rect-1"></div>
               </div>
             }
             {!activateNoiseIcon && 
